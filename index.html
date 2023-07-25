@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('https://img.freepik.com/free-photo/nature-colorful-landscape-dusk-cloud_1203-5705.jpg?w=900&t=st=1690262464~exp=1690263064~hmac=4fe3490699caee106f42e09ca4c9c04e950d489024d2ffb866bbbb8dbedb832e');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+    
+
+.weather-container {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 500px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #1DA1F2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0E71A8;
+}
+
+.weather-info {
+  font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="location">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" placeholder="e.g., London">
+            <button id="get-weather-btn">Get Weather</button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <!-- Weather data will be displayed here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
